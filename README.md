@@ -10,5 +10,6 @@
 #Création du superutilisateur
 - python manage.py createsuperuser
 
-
+#Création de l'application
+- python manage.py startapp myapp
 
