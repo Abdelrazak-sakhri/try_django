@@ -10,6 +10,7 @@
 </head>
 <body>
     <h2 class = "classTitle">Voici un contenu affiché depuis le server</h2>
+    <img src = "{% static 'images/img.png' %}">
     {% for element in materielsinfo %}
         {{ element }} <br>
     {% endfor %}
