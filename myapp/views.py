@@ -5,5 +5,6 @@ from django.template import loader
 # Create your views here.
 
 def index(request):
-    template = loader.get_template('index.html')
-    return HttpResponse(template.render())
+    template = loader.get_template("index.html")
+    data = {"nom" : "Albert"}
+    return HttpResponse(template.render(data))
